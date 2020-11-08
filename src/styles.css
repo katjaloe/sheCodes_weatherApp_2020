@@ -60,3 +60,9 @@ p {
 .today {
   font-weight: bolder;
 }
+
+.github-link {
+  font-size: 12px;
+  text-align: center;
+  margin: 15px auto auto auto;
+}

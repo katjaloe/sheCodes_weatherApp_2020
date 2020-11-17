@@ -23,18 +23,28 @@ let currentDay = days[date.getDay()];
 let today = document.querySelector("#current-day");
 
 let time = document.querySelector("#current-time");
+let iconElement = document.querySelector("#icon");
 
 today.innerHTML = `${days[date.getDay()]}`;
 time.innerHTML = `${hour}:${minutes}`;
 
 function displayWeather(response) {
+  let humidityElement = document.querySelector("#humidity");
+  let windElement = document.querySelector("#wind");
   document.querySelector("#city").innerHTML = response.data.name;
   document.querySelector("#temperature").innerHTML = `${Math.round(
     response.data.main.temp
-  )}`;
+  )} `;
   document.querySelector(
     "#terms"
   ).innerHTML = `${response.data.weather[0].description}`;
+  iconElement.setAttribute(
+    "src",
+    `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+  );
+  iconElement.setAttribute("alt", response.data.weather[0].description);
+  humidityElement.innerHTML = response.data.main.humidity;
+  windElement.innerHTML = Math.round(response.data.wind.speed);
 }
 
 function displayCity(city) {
@@ -65,3 +75,5 @@ function getCurrentPosition() {
 
 let locationButton = document.querySelector("#current-location");
 locationButton.addEventListener("click", getCurrentPosition);
+
+displayCity("New York");

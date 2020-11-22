@@ -107,10 +107,6 @@ ul {
   top: -32px;
 }
 
-.temperature {
-  font-size: 60px;
-}
-
 .icon-float-felt {
   height: 60px;
   width: 60px;
@@ -139,6 +135,15 @@ ul {
   height: auto;
   line-height: 15px;
   white-space: nowrap;
+}
+
+.weather-temperature .active {
+  color: rgb(33, 33, 33);
+  cursor: default;
+}
+
+.weather-temperature .active:hover {
+  text-decoration: none;
 }
 
 .overview {

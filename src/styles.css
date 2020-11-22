@@ -71,3 +71,7 @@ ul {
   text-align: center;
   margin: 15px auto auto auto;
 }
+
+.temperature {
+  font-size: 42px;
+}

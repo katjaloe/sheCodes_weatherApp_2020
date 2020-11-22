@@ -1,3 +1,7 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 h2 {
   color: #455a64;
 }
@@ -13,14 +17,14 @@ li {
   text-align: left;
 }
 
+li:first-letter {
+  text-transform: capitalize;
+}
+
 ul {
   padding: 0;
 }
 
-.city-name {
-  margin: 0 auto;
-  max-width: 400px;
-}
 .card {
   border-radius: 4px;
   display: block;
@@ -40,8 +44,8 @@ ul {
 .container {
   border-radius: 4px;
   max-width: 600px;
-  margin: 30px auto;
-  padding: 30px 60px;
+  margin: 30px auto 0 auto;
+  padding: 30px;
   background-image: linear-gradient(to top, #dfe9f3 0%, white 100%);
 }
 .forecast {
@@ -69,9 +73,74 @@ ul {
 .github-link {
   font-size: 12px;
   text-align: center;
-  margin: 15px auto auto auto;
+  margin: 5px auto auto auto;
 }
 
 .temperature {
   font-size: 42px;
+}
+
+.current-weather {
+  margin: 25px auto 35px auto;
+  max-width: 600px;
+}
+
+.search-form {
+  width: 100%;
+}
+
+.weather-temperature img {
+  margin-right: 5px;
+  height: 64px;
+  width: 64px;
+}
+
+.weather-temperature strong {
+  color: rgb(33, 33, 33);
+  font-size: 64px;
+  line-height: 1;
+  font-weight: 400;
+}
+
+.units {
+  position: relative;
+  top: -32px;
+}
+
+.temperature {
+  font-size: 60px;
+}
+
+.icon-float-felt {
+  height: 60px;
+  width: 60px;
+}
+
+.weather-forecast h3 {
+  font-size: 14px;
+  font-weight: 400;
+  text-align: center;
+  height: 15px;
+  line-height: 15px;
+  padding-top: 7px;
+}
+
+.weather-forecast img {
+  display: block;
+  margin: 0 auto;
+  height: 48px;
+  width: 48px;
+}
+
+.weather-forecast-temperature {
+  text-align: center;
+  font-size: 13px;
+  font-weight: 400;
+  height: auto;
+  line-height: 15px;
+  white-space: nowrap;
+}
+
+.overview {
+  margin: 0 auto;
 }

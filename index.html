@@ -19,16 +19,17 @@
 <body>
   <div class="container">
     <div class="weather">
-      <form id="search-form">
-        <div class="city-name">
-          <input type="text" class="city-name" placeholder="Enter a cityname" id="city-name-input" autocomplete="off"/>
+      <form class="inline" id="search-form">
+        <div class="form-group mb-2" class="city-name">
+          <input type="search" class="city-name" placeholder="Enter a cityname" id="city-name-input" autocomplete="off"/>
 
-          <button type="submit" class="search-button"><i class="fas fa-search"></i></button>
-          <button type="submit" class="current-location-button" id="current-location">Current Location</button>
-      </form>
+          <button type="submit" class="btn btn-secondary btn-sm" type="submit">Search</button>
+          <button type="submit" class="btn btn-secondary btn-sm" id="current-location">Current Location</button>
+      </div>
+        </form>
       <div class="current-weather">
       
-          <div class="card-body">
+        
            
              <div class="overview">
   <h2 id="city">Berlin</h2>
@@ -38,33 +39,33 @@
     </ul>
              </div>
             <div class="row">
-              <div class="col-7">
+              <div class="col-6">
                 <div class="clearfix weather-temperature">
                   <img src="" alt="Clear" id="icon" class="float-left" />
                   <div class="float-left">
-                    <strong class="temperature" id="temperature"></strong><span class="units"><a href="#" id="celsius-link" class="active"> °C</a> |
+                    <strong class="temperature" id="temperature"></strong><span class="units"><a href="#" id="celsius-link" class="active">°C</a> |
                       <a href="#" id="fahrenheit-link"> °F</a></span>
                   </div>
                 </div>
               </div>
-              <div class="col-5">
+              <div class="col-6">
                 <ul>
                   <li>Humidity: <span id="humidity"></span>%</li>
                   <li>Wind: <span id="wind"></span> km/h</li>
                 </ul>
               </div>
             </div>
-              </div>
+            
             </div>
-          </div>
+          
         
       </div>
    <div class="row weather-forecast" id="forecast">
      
 </div>
-    </div>
+    </div></div>
      
-    <p class="github-link"> <a href = "https://github.com/katjaloe/sheCodes_plus_week6" target="_blank">Open-source code</a>, by Katja</p>
+    <p class="github-link"> <a href = "https://github.com/katjaloe/sheCodes_plus_week6" target="_blank">Open-source code</a>, by Katja Löffler</p>
 
   </div>
   </div>
